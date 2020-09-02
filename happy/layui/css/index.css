@@ -1,0 +1,191 @@
+img{
+    height: 100%;
+}
+h3{
+    font-weight: 400;
+    color: lightseagreen;
+    font-size: 18px;
+    font-style: italic;
+}
+body{
+    background: pink;
+}
+.pic-box{
+    display:table-cell;
+    text-align: center;
+}
+.pic-box img{
+    width: 375px;
+}
+.note-pic{
+    width: 100%;
+}
+.article{
+    width: 100%;
+    height: 355px;
+
+}
+.text{
+    width: 370px;
+    height: 350px;    
+    line-height: 2;
+    text-indent: 24px;
+}
+.article p{
+    font-size: 14px;
+    color: #333;
+    width: 80%;
+    margin: 0 auto;
+}
+.isay{
+    padding: 20px;
+}
+.article .last{
+    display: block;
+    width: 200px;
+    height: 150px;
+    color: #222;
+    margin-top: 50px;
+    position: relative;
+}
+.date{
+    position: absolute;
+    right: 22%;
+    bottom: 2px;
+}
+.banner{
+    width: auto;
+    height: 880px;
+    background: #f8f8f8 url(../../images/banner.jpg) center/cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.wrap{
+    width: 100%;
+}
+.wrap .title{
+    display: block;
+    height: 30px;
+    width: 20px;
+    padding: 30px;
+}
+.content{
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 250px;
+    border: 5px dashed rgba(228, 190, 76, 0.932);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    background-color: rgba(230, 78, 116, 0.692);
+}
+.content p{
+    padding: 25px 15px;
+    line-height: 2;
+    color: #f8f8f8;
+}
+.comein{
+    width: 100%;
+    height: 160px;
+    margin-top: 50px;
+    text-align: center;    
+}
+.comein button{
+    border: none;
+    background-color: lawngreen;
+    padding: 8px 15px; 
+    margin-top: 30px;
+    border-radius: 2px;
+}
+.comein button a{
+    text-decoration: none;
+    color: #fff;
+}
+.say{
+    display: flex;
+    justify-content: center;
+}
+.notebook{
+    width: 80%;
+    height: 333px;
+    padding: 20px;
+    background-image: url(../../images/notes.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    opacity: .5;
+    color: red;
+}.notebook span{
+    color: #111111;
+}
+.notebook p{
+    width: 65%;
+    font-size: 12px;
+    text-indent: 4px;
+    line-height: 2;
+}
+.footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    text-align: right;
+    color: #333;
+}
+.heart{
+    width: 12   0px;
+    height: 90px;
+    background: green;
+    position: relative;
+    right: 110px;
+    top: 20px;
+    animation: myheart 2s linear 1s infinite alternate;
+    /* 执行动画：动画名称 动画时长 动画过渡 延迟 无限循环 反向动画 */
+}
+.heart::before{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 80px;
+    background: #f36;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+.heart::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 80px;
+    background: #f36;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+    left: 50px;
+    top: 0%;
+}
+@keyframes myheart{
+    from{
+        transform: scale(0.5);
+    }to{
+        transform: scale(1);
+    }
+}
+
+#star{
+    width: 180px;
+    height: 180px;
+    animation: mystar 3s linear 0s alternate ;
+}
+@keyframes mystar{
+    from{
+        transform: scale(0.2);
+    }to{
+        transform: scale(1.2);
+    }
+}

@@ -1,0 +1,10 @@
+<template>
+  <div>
+    <h1>文章列表页</h1>
+    <ul>
+      <li>《灵魂永生》</li>
+      <li>《个人实相的本质》</li>
+      <li>《未知的实相》</li>
+    </ul>
+  </div>
+</template>
